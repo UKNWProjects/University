@@ -8,6 +8,7 @@ namespace UniversityAppBackend.DataAccess
         public UniversityDBContext(DbContextOptions<UniversityDBContext> options):base(options) { }
 
         //ADD DbSets
-        public DbSet<User>? Users { get; set; }
+        public DbSet<User>? Users { get; set; } //Usuarios
+        public DbSet<Curso>? Cursos { get; set; } //Cursos
     }
 }
